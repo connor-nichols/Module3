@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5269912793268550480}
   - component: {fileID: -8938543516490665312}
+  - component: {fileID: 4735676081623445555}
   m_Layer: 0
   m_Name: BasicStart
   m_TagString: Untagged
@@ -51,7 +52,20 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
+--- !u!65 &4735676081623445555
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1885884424246316248}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2376815536636142685
 GameObject:
   m_ObjectHideFlags: 0
@@ -64,6 +78,7 @@ GameObject:
   - component: {fileID: 1750511650672997567}
   - component: {fileID: 5202278504367108551}
   - component: {fileID: 1286673305803314608}
+  - component: {fileID: 3232225666570728660}
   m_Layer: 0
   m_Name: Back Wall
   m_TagString: Untagged
@@ -149,6 +164,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &3232225666570728660
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2376815536636142685}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 2
 --- !u!1 &3991166221446730892
 GameObject:
   m_ObjectHideFlags: 0
@@ -161,6 +192,7 @@ GameObject:
   - component: {fileID: 2661645568822579609}
   - component: {fileID: 650344813672093706}
   - component: {fileID: 5047048063211116749}
+  - component: {fileID: 2803422942859782784}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Untagged
@@ -246,6 +278,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &2803422942859782784
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3991166221446730892}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 2
 --- !u!1 &4725018488439088886
 GameObject:
   m_ObjectHideFlags: 0
@@ -258,6 +306,7 @@ GameObject:
   - component: {fileID: 3813967370620202075}
   - component: {fileID: 5687667027286323561}
   - component: {fileID: 8009266748862161308}
+  - component: {fileID: 4137716914038379374}
   m_Layer: 0
   m_Name: Right Wall
   m_TagString: Untagged
@@ -343,6 +392,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &4137716914038379374
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4725018488439088886}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 2
 --- !u!1 &6703539476227290616
 GameObject:
   m_ObjectHideFlags: 0
@@ -355,6 +420,7 @@ GameObject:
   - component: {fileID: 3197993772179201936}
   - component: {fileID: 7263682057057263378}
   - component: {fileID: 8529746122096062358}
+  - component: {fileID: 1833212129192233365}
   m_Layer: 0
   m_Name: Left Wall
   m_TagString: Untagged
@@ -440,3 +506,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &1833212129192233365
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6703539476227290616}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 2
