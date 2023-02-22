@@ -412,7 +412,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8432888809085266238}
   - component: {fileID: 8377948811267123798}
-  - component: {fileID: 723238704073496485}
+  - component: {fileID: 8104237088916207689}
+  - component: {fileID: 3648135149518069384}
   m_Layer: 0
   m_Name: SkeletonOutlaw_NoArmor - LOD0
   m_TagString: Untagged
@@ -459,18 +460,36 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &723238704073496485
-MonoBehaviour:
+--- !u!54 &8104237088916207689
+Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8435371166376745182}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!64 &3648135149518069384
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8435371166376745182}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d23d3a3a0db6064449d2518b2858651a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &8435379412389932338
 GameObject:
   m_ObjectHideFlags: 0
