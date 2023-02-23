@@ -11,6 +11,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: gem_08 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 1735989688514166, guid: 3394356637fef427a8d6ae0d658056bc, type: 3}
+      propertyPath: m_TagString
+      value: Gem
+      objectReference: {fileID: 0}
     - target: {fileID: 4035310235073524, guid: 3394356637fef427a8d6ae0d658056bc, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -56,19 +60,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 5240390506093414199}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &7833790007308712505
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5242103899689627969}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.77083445, z: 0.99999994}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &6461063529331061611
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -85,6 +76,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &7833790007308712505
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5242103899689627969}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.77083445, z: 0.99999994}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &7161565497456244002
 MonoBehaviour:
   m_ObjectHideFlags: 0

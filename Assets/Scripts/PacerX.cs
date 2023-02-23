@@ -5,9 +5,9 @@ public class PacerX : MonoBehaviour
 {
 
     public float speed = 5.0f;
-    private float xMax = 7.5f;
-
-    private float xMin = -7.5f; //starting position
+    public float xMax = 5f;
+    public float xMin = 15f; //starting position
+    public float zStart = 20f;
     private int direction = 1; //positive to start
 
     void Update()
@@ -18,12 +18,14 @@ public class PacerX : MonoBehaviour
         {
             xNew = xMax;
             direction *= -1;
+            transform.Rotate(0, -180, 0);
         }
         else if (xNew <= xMin)
         {
             xNew = xMin;
             direction *= -1;
+            transform.Rotate(0, -180, 0);
         }
-        transform.position = new Vector3(7.5f, 0.75f, xNew);
+        transform.position = new Vector3(xNew, 0.125f, zStart);
     }
 }
