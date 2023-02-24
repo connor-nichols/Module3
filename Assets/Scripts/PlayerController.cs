@@ -17,6 +17,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private AudioClip collectChime;
 
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -75,6 +77,7 @@ public class PlayerController : MonoBehaviour
 
         if (other.gameObject.CompareTag("Skeleton"))
         {
+            List<Vector3> spawnLocations;
             transform.position = new Vector3(0f, 0.75f, 0f);
         }
     }
