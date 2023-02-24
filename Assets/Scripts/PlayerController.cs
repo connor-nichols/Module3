@@ -7,10 +7,10 @@ public class PlayerController : MonoBehaviour
 {
     public TextMeshProUGUI distanceText;
     public TextMeshProUGUI totalGemsText;
+    public TextMeshProUGUI winText;
 
     public GameObject winObject;
     public GameObject playerObject;
-    public GameObject winTextObject;
 
     private int count;
 
@@ -23,14 +23,33 @@ public class PlayerController : MonoBehaviour
         count = 0;
 
         SetCountText();
-        winTextObject.SetActive(false);
+        winText.enabled = false;
     }
 
     // Update is called once per frame
     void Update()
     {
         float distance = Vector3.Distance(playerObject.transform.position, winObject.transform.position);
-        distanceText.SetText("Distance to End: " + distance); 
+        distanceText.SetText("Distance to End: " + distance);
+        if (count == 25 && distance <= 2)
+        {
+            winText.text = "You win!";
+            winText.enabled = true;
+        }
+        else if (distance <= 2)
+        {
+            winText.text = "You found the hidden treasure! Collect all gems to win!";
+            winText.enabled = true;
+        }
+        else if (count == 25)
+        {
+            winText.text = "You found all gems! Find the treasure chest to win!";
+            winText.enabled = true;
+        }
+        else
+        {
+            winText.enabled = false;
+        }
     }
 
     void SetCountText()
@@ -38,7 +57,8 @@ public class PlayerController : MonoBehaviour
         totalGemsText.text = "Gems Collected: " + count.ToString();
         if (count >= 25)
         {
-            winTextObject.SetActive(true);
+            winText.text = "Congrats! You found all gems!";
+            winText.enabled = true;
         }
     }
 

@@ -698,7 +698,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 6.330261, w: 0}
+  m_margin: {x: -123.8313, y: 0, z: -121.551575, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1198,9 +1198,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distanceText: {fileID: 710766388}
   totalGemsText: {fileID: 1558443269}
+  winText: {fileID: 50308320}
   winObject: {fileID: 1783086803}
   playerObject: {fileID: 1521277594}
-  winTextObject: {fileID: 50308318}
   collectChime: {fileID: 0}
 --- !u!1001 &107738667
 PrefabInstance:
@@ -17081,7 +17081,7 @@ PrefabInstance:
     - target: {fileID: 6415634962613929406, guid: 8958d3cecd9ad784e8b50ab9de7f7be9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.8696823
+      value: -2.8034859
       objectReference: {fileID: 0}
     - target: {fileID: 6415634962613929406, guid: 8958d3cecd9ad784e8b50ab9de7f7be9,
         type: 3}
