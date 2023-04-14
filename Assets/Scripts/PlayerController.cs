@@ -77,8 +77,15 @@ public class PlayerController : MonoBehaviour
 
         if (other.gameObject.CompareTag("Skeleton"))
         {
-            List<Vector3> spawnLocations;
-            transform.position = new Vector3(0f, 0.75f, 0f);
+            List<Vector3> spawnLocations = new List<Vector3>();
+
+            spawnLocations.Add(new Vector3(0f, 0.75f, 0f));
+            spawnLocations.Add(new Vector3(85f, 0.75f, 0f));
+            spawnLocations.Add(new Vector3(25f, 0.75f, 15f));
+
+            int spawnPoint = Random.Range(0, 3);
+
+            transform.position = spawnLocations[spawnPoint];
         }
     }
 }
